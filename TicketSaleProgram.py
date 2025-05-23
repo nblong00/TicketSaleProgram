@@ -1,14 +1,13 @@
+TICKET_PRICE = 10
+SERVICE_CHARGE = 2
+
+
+def calculate_price(number_of_tickets):
+    return (number_of_tickets * TICKET_PRICE) + SERVICE_CHARGE
 
 
 def main():
-    TICKET_PRICE = 10
-    SERVICE_CHARGE = 2
-
     tickets_remaining = 100 
-
-    def calculate_price(number_of_tickets):
-        return (number_of_tickets * TICKET_PRICE) + SERVICE_CHARGE
-
     while tickets_remaining != 0:
         print("Number of tickets remaining: {}".format(tickets_remaining))
         user_name = input("Enter your name: ")
